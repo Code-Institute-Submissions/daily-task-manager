@@ -54,7 +54,7 @@ class TaskManager():
         if not self.tasks:
             print("No tasks found.")
         
-        self.display_tasks()
+        self.display_all_tasks()
         deletion_index = int(input("Enter the task number to delete: ")) - 1
 
         if deletion_index < 0 or deletion_index >= len(self.tasks):
