@@ -7,6 +7,11 @@ class Task():
         self.task_description = task_description
         self.task_date = task_date
     
+    def display_one_task(self):
+        print("Title: ", self.task_title)
+        print("Description: ", self.task_description)
+        print("Due Date: ", self.task_date)
+    
 class TaskManager():
     """ Class to create instance of the task manager """ 
     def __init__(self):
@@ -26,23 +31,24 @@ class TaskManager():
 
         try:
             """ Converts string into datetime object and checks if it is valid """
-            task_date = datetime.strptime(task_date, "%d-%m-%Y").date()
+            task_date = datetime.strptime(task_date, "%Y-%m-%d").date()
         except ValueError:
             print("Invalid date format. Task creation failed.")
+
+            return False
         
         task = Task(task_title, task_description, task_date)
         self.tasks.append(task)
         print("Task created succesfully.")
         
-    def display_tasks(self):
+    def display_all_tasks(self):
         if not self.tasks:
             print("No tasks found.")
         
         print("Tasks:")
-        for task in range(len(self.tasks)):
-            print(f"{task + 1}. Title: {self.task_title}")
-            print(f"Description: {self.task_description}")
-            print(f"Due Date: {self.task_date}")
+        for index, task in zip(self.tasks):
+            print(f"{task + 1}.")
+            task.display_one_task()
         
     def delete_task(self):
         if not self.tasks:
