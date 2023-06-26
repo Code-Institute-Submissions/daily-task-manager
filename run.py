@@ -42,6 +42,11 @@ class TaskManager():
         print("Task created succesfully.")
         
     def display_all_tasks(self):
+        """
+        - Checks if tasks list is empty, if so, prints out error message.
+        - Loops through tasks list and calls display_one_task method for every task in list.
+
+        """
         if not self.tasks:
             print("No tasks found.")
         
@@ -51,6 +56,11 @@ class TaskManager():
             self.tasks[index].display_one_task()
 
     def delete_task(self):
+        """
+        - Checks if tasks is empty, if so, prints error message.
+        - Displays all tasks and ask user for the task that should be deleted.
+        - Checks if the number is valid, if so, deletes given task in list.
+        """
         if not self.tasks:
             print("No tasks found.")
         
