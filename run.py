@@ -5,5 +5,6 @@ class Task():
         self.task_date = task_date
 
 def main():
+    tasks = []
     while True:
         print("Welcome to DAILY - your task manager.")
