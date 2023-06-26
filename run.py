@@ -13,7 +13,7 @@ class TaskManager():
         """ List to store the created task objects """
         self.tasks = []
 
-    def create_task():
+    def create_task(self):
         """
         - Gets user input
         - Checks if task_date input is a valid date
@@ -33,8 +33,19 @@ class TaskManager():
         task = Task(task_title, task_description, task_date)
         self.tasks.append(task)
         print("Task created succesfully.")
+
     
-    def main():
+    def display_tasks(self):
+        if not self.tasks:
+            print("No tasks found.")
+        
+        print("Tasks:")
+        for task in range(len(self.tasks)):
+            print(f"{task + 1}. Title: {self.task_title}")
+            print(f"Description: {self.task_description}")
+            print(f"Due Date: {self.task_date}")
+    
+    def main(self):
         """ Main method to run the program """
         while True:
             print("Welcome to DAILY - your task manager.")
