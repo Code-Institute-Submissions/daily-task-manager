@@ -14,3 +14,7 @@ class TaskManager():
     def main():
         while True:
             print("Welcome to DAILY - your task manager.")
+
+task_manager = TaskManager()
+task_manager.main()
+
