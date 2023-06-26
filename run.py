@@ -61,7 +61,7 @@ class TaskManager():
         """ Main method to run the program """
         while True:
             print("Welcome to DAILY - your task manager.\n")
-            print("What would you like to do?")
+            print("What would you like to do?\n")
             print("1. Create a task")
             print("2. Display your tasks")
             print("3. Delete a task")
