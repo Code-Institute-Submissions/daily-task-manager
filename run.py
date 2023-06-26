@@ -82,4 +82,5 @@ class TaskManager():
 
 
 task_manager = TaskManager()
+task_manager.main()
 
