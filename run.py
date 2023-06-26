@@ -44,7 +44,7 @@ class TaskManager():
             print(f"Description: {self.task_description}")
             print(f"Due Date: {self.task_date}")
         
-    def delete_task():
+    def delete_task(self):
         if not self.tasks:
             print("No tasks found.")
         
@@ -60,7 +60,26 @@ class TaskManager():
     def main(self):
         """ Main method to run the program """
         while True:
-            print("Welcome to DAILY - your task manager.")
+            print("Welcome to DAILY - your task manager.\n")
+            print("What would you like to do?")
+            print("1. Create a task")
+            print("2. Display your tasks")
+            print("3. Delete a task")
+            print("4. Quit\n")
+
+            choice = input("Enter your choice (1-4): ")
+
+            if choice == "1":
+                self.create_task()
+            if choice == "2":
+                self.display_tasks()
+            if choice == "3":
+                self.delete_task()
+            if choice == "4":
+                break
+            else:
+                print("Invalid choice! Please try again.")
+
 
 task_manager = TaskManager()
 
