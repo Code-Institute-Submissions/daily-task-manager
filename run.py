@@ -1,3 +1,5 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+class Task():
+    def __init__(self, task_title, task_description, task_date):
+        self.task_title = task_title
+        self.task_description = task_description
+        self.task_date = task_date
