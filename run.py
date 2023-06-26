@@ -33,8 +33,7 @@ class TaskManager():
         task = Task(task_title, task_description, task_date)
         self.tasks.append(task)
         print("Task created succesfully.")
-
-    
+        
     def display_tasks(self):
         if not self.tasks:
             print("No tasks found.")
@@ -44,6 +43,19 @@ class TaskManager():
             print(f"{task + 1}. Title: {self.task_title}")
             print(f"Description: {self.task_description}")
             print(f"Due Date: {self.task_date}")
+        
+    def delete_task():
+        if not self.tasks:
+            print("No tasks found.")
+        
+        self.display_tasks()
+        deletion_index = int(input("Enter the task number to delete: ")) - 1
+
+        if deletion_index < 0 or deletion_index >= len(self.tasks):
+            print("Invalid task number. Task deletion failed.")
+        
+        del self.tasks[deletion_index]
+        print("Task deleted successfully.")
     
     def main(self):
         """ Main method to run the program """
