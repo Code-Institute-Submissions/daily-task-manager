@@ -22,6 +22,10 @@ class TaskManager():
             task_date = datetime.strptime(task_date, "%d-%m-%Y").date()
         except ValueError:
             print("Invalid date format. Task creation failed.")
+        
+        task = Task(task_title, task_description, task_date)
+        self.tasks.append(task)
+        print("Task created succesfully.")
     
     def main():
         while True:
