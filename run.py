@@ -46,10 +46,10 @@ class TaskManager():
             print("No tasks found.")
         
         print("Tasks:")
-        for index, task in zip(self.tasks):
-            print(f"{task + 1}.")
-            task.display_one_task()
-        
+        for index in range(len(self.tasks)):
+            print(f"{index + 1}.")
+            self.tasks[index].display_one_task()
+
     def delete_task(self):
         if not self.tasks:
             print("No tasks found.")
@@ -77,11 +77,11 @@ class TaskManager():
 
             if choice == "1":
                 self.create_task()
-            if choice == "2":
-                self.display_tasks()
-            if choice == "3":
+            elif choice == "2":
+                self.display_all_tasks()
+            elif choice == "3":
                 self.delete_task()
-            if choice == "4":
+            elif choice == "4":
                 break
             else:
                 print("Invalid choice! Please try again.")
