@@ -110,6 +110,8 @@ class TaskManager:
                 print("Invalid choice! Please try again.")
 
 
-task_manager = TaskManager()
-task_manager.main()
+if __name__ == "__main__":
+    task_manager = TaskManager()
+    task_manager.main()
+
 
