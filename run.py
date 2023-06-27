@@ -41,25 +41,30 @@ class Task:
 
 
 class TaskManager:
-    """Class to create instance of the task manager"""
+    """
+    A class representing a task manager.
 
+    Attributes:
+        tasks (list): A list to store the tasks.
+    """
+    
     def __init__(self):
-        """List to store the created task objects"""
+        """
+        Initializes an instance of TaskManager.
+        """
+
         self.tasks = []
 
     def create_task(self):
         """
-        - Gets user input
-        - Checks if task_date input is a valid date
-        - Creates task and appends to list
-        - Prints out message to user
+        Creates a new task based on user input.
         """
+
         task_title = input("\nEnter a task title: ")
         task_description = input("\nDescribe the new task: ")
         task_date = input("\nWhen must the task be finished (YYYY-MM-DD): ")
 
         try:
-            """Converts string into datetime object and checks if it is valid"""
             task_date = datetime.strptime(task_date, "%Y-%m-%d").date()
         except ValueError:
             print("Invalid date format. Task creation failed.")
@@ -72,10 +77,9 @@ class TaskManager:
 
     def display_all_tasks(self):
         """
-        - Checks if tasks list is empty, if so, prints out error message.
-        - Loops through tasks list and calls display_one_task method for every task in list.
-
+        Displays all tasks stored in the TaskManager.
         """
+ 
         if not self.tasks:
             print("\nNo tasks found.\n")
             return False
@@ -87,10 +91,9 @@ class TaskManager:
 
     def delete_task(self):
         """
-        - Checks if tasks is empty, if so, prints error message.
-        - Displays all tasks and ask user for the task that should be deleted.
-        - Checks if the number is valid, if so, deletes given task in list.
+        Deletes a task from the TaskManager based on user input.
         """
+
         if not self.tasks:
             print("No tasks found.")
 
@@ -106,7 +109,10 @@ class TaskManager:
         print("Task deleted successfully.")
 
     def main(self):
-        """Main method to run the program"""
+        """
+        The main function of the TaskManager class.
+        """
+        
         print("\nWelcome to DAILY - your task manager.")
         while True:
             print(APP_MENU)
