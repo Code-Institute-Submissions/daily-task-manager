@@ -78,8 +78,8 @@ class TaskManager():
     
     def main(self):
         """ Main method to run the program """
+        print("Welcome to DAILY - your task manager.\n")
         while True:
-            print("Welcome to DAILY - your task manager.\n")
             print("What would you like to do?\n")
             print("1. Create a task")
             print("2. Display your tasks")
