@@ -17,7 +17,7 @@ class Task():
         self.task_description = task_description
         self.task_date = task_date
     
-    def display_one_task(self):
+    def display_task(self):
         print("Title: ", self.task_title)
         print("Description: ", self.task_description)
         print("Due Date: ", self.task_date)
