@@ -10,22 +10,26 @@ What would you like to do?
 
 """
 
-class Task():
-    """ Class to create instance of a task """
+
+class Task:
+    """Class to create instance of a task"""
+
     def __init__(self, task_title, task_description, task_date):
         self.task_title = task_title
         self.task_description = task_description
         self.task_date = task_date
-    
+
     def display_task(self):
         print("Title: ", self.task_title)
         print("Description: ", self.task_description)
         print("Due Date: ", self.task_date)
-    
-class TaskManager():
-    """ Class to create instance of the task manager """ 
+
+
+class TaskManager:
+    """Class to create instance of the task manager"""
+
     def __init__(self):
-        """ List to store the created task objects """
+        """List to store the created task objects"""
         self.tasks = []
 
     def create_task(self):
@@ -40,17 +44,17 @@ class TaskManager():
         task_date = input("\nWhen must the task be finished (YYYY-MM-DD): ")
 
         try:
-            """ Converts string into datetime object and checks if it is valid """
+            """Converts string into datetime object and checks if it is valid"""
             task_date = datetime.strptime(task_date, "%Y-%m-%d").date()
         except ValueError:
             print("Invalid date format. Task creation failed.")
 
             return False
-        
+
         task = Task(task_title, task_description, task_date)
         self.tasks.append(task)
         print("\nTask created succesfully.")
-        
+
     def display_all_tasks(self):
         """
         - Checks if tasks list is empty, if so, prints out error message.
@@ -60,7 +64,7 @@ class TaskManager():
         if not self.tasks:
             print("\nNo tasks found.\n")
             return False
-        
+
         print("\nTasks:")
         for index in range(len(self.tasks)):
             print(f"\n{index + 1}.")
@@ -76,18 +80,18 @@ class TaskManager():
             print("No tasks found.")
 
             return False
-        
+
         self.display_all_tasks()
         deletion_index = int(input("\nEnter the task number to delete: ")) - 1
 
         if deletion_index < 0 or deletion_index >= len(self.tasks):
             print("Invalid task number. Task deletion failed.")
-        
+
         del self.tasks[deletion_index]
         print("Task deleted successfully.")
-    
+
     def main(self):
-        """ Main method to run the program """
+        """Main method to run the program"""
         print("\nWelcome to DAILY - your task manager.")
         while True:
             print(APP_MENU)
