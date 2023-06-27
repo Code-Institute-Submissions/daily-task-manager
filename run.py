@@ -35,9 +35,9 @@ class TaskManager():
         - Creates task and appends to list
         - Prints out message to user
         """
-        task_title = str(input("\nEnter a task title: "))
-        task_description = str(input("\nDescribe the new task: "))
-        task_date = str(input("\nWhen must the task be finished (YYYY-MM-DD): "))
+        task_title = input("\nEnter a task title: ")
+        task_description = input("\nDescribe the new task: ")
+        task_date = input("\nWhen must the task be finished (YYYY-MM-DD): ")
 
         try:
             """ Converts string into datetime object and checks if it is valid """
@@ -88,7 +88,7 @@ class TaskManager():
     
     def main(self):
         """ Main method to run the program """
-        print("Welcome to DAILY - your task manager.")
+        print("\nWelcome to DAILY - your task manager.")
         while True:
             print(APP_MENU)
 
