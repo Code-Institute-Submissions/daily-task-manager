@@ -25,9 +25,9 @@ class TaskManager():
         - Creates task and appends to list
         - Prints out message to user
         """
-        task_title = str(input("Enter a task title: "))
-        task_description = str(input("Describe the new task: "))
-        task_date = str(input("When must the task be finished (YYYY-MM-DD): "))
+        task_title = str(input("\nEnter a task title: "))
+        task_description = str(input("\nDescribe the new task: "))
+        task_date = str(input("\nWhen must the task be finished (YYYY-MM-DD): "))
 
         try:
             """ Converts string into datetime object and checks if it is valid """
@@ -39,7 +39,7 @@ class TaskManager():
         
         task = Task(task_title, task_description, task_date)
         self.tasks.append(task)
-        print("Task created succesfully.")
+        print("\nTask created succesfully.")
         
     def display_all_tasks(self):
         """
@@ -48,12 +48,12 @@ class TaskManager():
 
         """
         if not self.tasks:
-            print("No tasks found.")
+            print("\nNo tasks found.\n")
             return False
         
-        print("Tasks:")
+        print("\nTasks:")
         for index in range(len(self.tasks)):
-            print(f"{index + 1}.")
+            print(f"\n{index + 1}.")
             self.tasks[index].display_one_task()
 
     def delete_task(self):
@@ -68,7 +68,7 @@ class TaskManager():
             return False
         
         self.display_all_tasks()
-        deletion_index = int(input("Enter the task number to delete: ")) - 1
+        deletion_index = int(input("\nEnter the task number to delete: ")) - 1
 
         if deletion_index < 0 or deletion_index >= len(self.tasks):
             print("Invalid task number. Task deletion failed.")
@@ -80,7 +80,7 @@ class TaskManager():
         """ Main method to run the program """
         print("Welcome to DAILY - your task manager.\n")
         while True:
-            print("What would you like to do?\n")
+            print("\nWhat would you like to do?\n")
             print("1. Create a task")
             print("2. Display your tasks")
             print("3. Delete a task")
