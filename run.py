@@ -1,5 +1,15 @@
 from datetime import datetime
 
+APP_MENU = """
+What would you like to do?
+
+1. Create A New Task
+2. Display Your Tasks
+3. Delete A Task
+4. Quit program
+
+"""
+
 class Task():
     """ Class to create instance of a task """
     def __init__(self, task_title, task_description, task_date):
@@ -78,13 +88,9 @@ class TaskManager():
     
     def main(self):
         """ Main method to run the program """
-        print("Welcome to DAILY - your task manager.\n")
+        print("Welcome to DAILY - your task manager.")
         while True:
-            print("\nWhat would you like to do?\n")
-            print("1. Create a task")
-            print("2. Display your tasks")
-            print("3. Delete a task")
-            print("4. Quit\n")
+            print(APP_MENU)
 
             choice = input("Enter your choice (1-4): ")
 
