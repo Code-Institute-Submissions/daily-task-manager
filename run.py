@@ -68,7 +68,7 @@ class TaskManager:
         print("\nTasks:")
         for index in range(len(self.tasks)):
             print(f"\n{index + 1}.")
-            self.tasks[index].display_one_task()
+            self.tasks[index].display_task()
 
     def delete_task(self):
         """
