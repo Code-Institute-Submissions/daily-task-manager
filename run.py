@@ -12,14 +12,29 @@ What would you like to do?
 
 
 class Task:
-    """Class to create instance of a task"""
+    """
+    A class representing a task.
 
+    Attributes:
+        task_title (str): The title of the task.
+        task_description (str): The description of the task.
+        task_date (str): The due date of the task.
+    """
+    
     def __init__(self, task_title, task_description, task_date):
         self.task_title = task_title
         self.task_description = task_description
         self.task_date = task_date
 
     def display_task(self):
+        """
+        Displays the task information.
+
+        Prints:
+            Title: <task_title>
+            Description: <task_description>
+            Due Date: <task_date>
+        """
         print("Title: ", self.task_title)
         print("Description: ", self.task_description)
         print("Due Date: ", self.task_date)
