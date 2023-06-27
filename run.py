@@ -49,6 +49,7 @@ class TaskManager():
         """
         if not self.tasks:
             print("No tasks found.")
+            return False
         
         print("Tasks:")
         for index in range(len(self.tasks)):
