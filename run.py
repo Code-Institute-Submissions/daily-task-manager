@@ -21,12 +21,14 @@ class Task:
         task_title (str): The title of the task.
         task_description (str): The description of the task.
         task_date (str): The due date of the task.
+        task_status (str): The status of the task.
     """
     
-    def __init__(self, task_title, task_description, task_date):
+    def __init__(self, task_title, task_description, task_date, task_status):
         self.task_title = task_title
         self.task_description = task_description
         self.task_date = task_date
+        self.task_status = "Open"
 
     def display_task(self, index):
         """
@@ -36,11 +38,13 @@ class Task:
             <index> Title: <task_title>
                     Description: <task_description>
                     Due Date: <task_date>
+                    Status: <task_status>
         """
         print(f"""
         {index}. Title: {self.task_title}
            Description: {self.task_description}
            Due Date: {self.task_date}
+           Status: {self.task_status}
         """)
 
 
@@ -110,7 +114,7 @@ class TaskManager:
             return False
 
         print("\nTasks:")
-        # Gets element and index in list
+        # Gets element and index in list.
         for index, task in enumerate(self.tasks):
             task.display_task(index + 1)
 
