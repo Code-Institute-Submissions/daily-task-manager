@@ -84,7 +84,7 @@ class TaskManager:
 
         task_title = input("\nEnter a task title: ")
         task_description = input("\nDescribe the new task: ")
-        task_date = input("\nWhen must the task be finished (YYYY-MM-DD): ")
+        task_date = input("\nWhen must the task be finished (DD-MM-YYYY): ")
 
         try:
             # Converts task_date (str) in to a datetime object, extracts the date and checks for valid format (DD-MM-YYYY).
