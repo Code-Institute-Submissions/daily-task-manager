@@ -110,6 +110,7 @@ class TaskManager:
             return False
 
         print("\nTasks:")
+        # Gets element and index in list
         for index, task in enumerate(self.tasks):
             task.display_task(index + 1)
 
