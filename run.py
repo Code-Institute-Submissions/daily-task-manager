@@ -28,18 +28,20 @@ class Task:
         self.task_description = task_description
         self.task_date = task_date
 
-    def display_task(self):
+    def display_task(self, index):
         """
         Displays the task information.
 
         Prints:
-            Title: <task_title>
-            Description: <task_description>
-            Due Date: <task_date>
+            <index> Title: <task_title>
+                    Description: <task_description>
+                    Due Date: <task_date>
         """
-        print("Title: ", self.task_title)
-        print("Description: ", self.task_description)
-        print("Due Date: ", self.task_date)
+        print(f"""
+        {index}. Title: {self.task_title}
+           Description: {self.task_description}
+           Due Date: {self.task_date}
+        """)
 
 
 class TaskManager:
