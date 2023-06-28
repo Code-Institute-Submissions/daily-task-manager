@@ -1,5 +1,7 @@
 from datetime import datetime
 
+WELCOME_MSG = "Welcome to DAILY - your task manager."
+
 APP_MENU = """
 What would you like to do?
 
@@ -114,7 +116,7 @@ class TaskManager:
         The main function of the TaskManager class.
         """
         
-        print("\nWelcome to DAILY - your task manager.")
+        print(WELCOME_MSG)
         while True:
             print(APP_MENU)
 
