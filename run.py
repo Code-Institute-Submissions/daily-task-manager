@@ -108,9 +108,8 @@ class TaskManager:
             return False
 
         print("\nTasks:")
-        for index in range(len(self.tasks)):
-            print(f"\n{index + 1}.")
-            self.tasks[index].display_task()
+        for index, task in enumerate(self.tasks):
+            task.display_task(index + 1)
 
     def delete_task(self):
         """
