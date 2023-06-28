@@ -24,11 +24,11 @@ class Task:
         task_status (str): The status of the task.
     """
     
-    def __init__(self, task_title, task_description, task_date, task_status):
+    def __init__(self, task_title, task_description, task_date, task_status = "Open"):
         self.task_title = task_title
         self.task_description = task_description
         self.task_date = task_date
-        self.task_status = "Open"
+        self.task_status = task_status
 
     def display_task(self, index):
         """
@@ -100,7 +100,7 @@ class TaskManager:
 
             return False
 
-        task = Task(task_title, task_description, task_date)
+        task = Task(task_title, task_description, task_date, task_status)
         self.tasks.append(task)
         print("\nTask created succesfully.")
 
