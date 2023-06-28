@@ -135,7 +135,7 @@ class TaskManager:
             print("Invalid task number. Task deletion failed.")
 
         del self.tasks[deletion_index]
-        print("Task deleted successfully.")
+        print("\nTask deleted successfully.")
 
     def main(self):
         """
