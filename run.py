@@ -44,18 +44,38 @@ class Task:
 
 class TaskManager:
     """
-    A class representing a task manager.
+    A class representing a task manager implemented as a singleton.
 
     Attributes:
         tasks (list): A list to store the tasks.
     """
     
+    # Private variable to store the only instance of TaskManager.
+    __instance = None
+    
+
+    @staticmethod
+    # Private method, means that the method belongs to the class.
+    def get_instance():
+        """
+        Creates the only instance of TaskManager if it doesn't exist yet.
+        """
+        if TaskManager.__instance is None:
+            TaskManager()
+        return TaskManager.__instance
+
     def __init__(self):
         """
         Initializes an instance of TaskManager.
         """
-
-        self.tasks = []
+        
+        if TaskManager.__instance is not None:
+            # Raises an exception if an instance of TaskManager already exist.
+            raise Exception("This class is a singleton!")
+        else:
+            # Sets the instance variable to reference the current instance.
+            TaskManager.__instance = self
+            self.tasks = []
 
     def create_task(self):
         """
@@ -135,7 +155,7 @@ class TaskManager:
 
 
 if __name__ == "__main__":
-    task_manager = TaskManager()
+    task_manager = TaskManager.get_instance()
     task_manager.main()
 
 
