@@ -152,14 +152,17 @@ class TaskManager:
             return False
         
         task = self.tasks[update_index]
-        new_status = input("Enter the new task status (Open, In Progress, Completed): ")
+        new_status = input("Do you want to update the task status to Open, In Progress or Completed (O / P / C): ")
 
-        if new_status not in ["Open", "In Progress", "Completed"]:
+        if new_status == "O":
+            task.task_status = "Open"
+        elif new_status == "P":
+            task.task_status = "In Progress"
+        elif new_status == "C":
+            task.task_status = "Completed"
+        else:
             print("Invalid task status. Task status update failed.")
 
-            return False
-        
-        task.task_status = new_status
         print("Task status updated successfully.")
 
         self.display_all_tasks()
