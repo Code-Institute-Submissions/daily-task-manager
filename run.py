@@ -161,6 +161,8 @@ class TaskManager:
         
         task.task_status = new_status
         print("Task status updated successfully.")
+
+        self.display_all_tasks()
         
     def main(self):
         """
