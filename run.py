@@ -7,8 +7,9 @@ What would you like to do?
 
 1. Create A New Task
 2. Display Your Tasks
-3. Delete A Task
-4. Quit program
+3. Update A Task Status
+4. Delete A Task
+5. Quit Program
 
 """
 
@@ -137,6 +138,30 @@ class TaskManager:
         del self.tasks[deletion_index]
         print("\nTask deleted successfully.")
 
+    def update_task_status(self):
+        """
+        Allows the user to update the task status of a task.
+        """
+        self.display_all_tasks()
+
+        update_index = int(input("Enter the task number whose task status you want to change: ")) - 1
+
+        if update_index < 0 or update_index >= len(self.tasks):
+            print("Invalid task number. Task status update failed.")
+
+            return False
+        
+        task = self.tasks[update_index]
+        new_status = input("Enter the new task status (Open, In Progress, Completed): ")
+
+        if new_status not in ["Open", "In Progress", "Completed"]:
+            print("Invalid task status. Task status update failed.")
+
+            return False
+        
+        task.task_status = new_status
+        print("Task status updated successfully.")
+        
     def main(self):
         """
         The main function of the TaskManager class.
@@ -153,8 +178,10 @@ class TaskManager:
             elif choice == "2":
                 self.display_all_tasks()
             elif choice == "3":
-                self.delete_task()
+                self.update_task_status()
             elif choice == "4":
+                self.delete_task()
+            elif choice == "5":
                 break
             else:
                 print("Invalid choice! Please try again.")
