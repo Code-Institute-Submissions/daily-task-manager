@@ -49,3 +49,9 @@ If you choose the "Display Your Tasks" option, the program will check if you hav
 ![Update Task Status](images/update-task.jpeg)
 
 If you select the "Update A Task Status" option, you will be presented with your existing tasks. You can then choose which task's status you want to modify. Once you have made your selection, you will be prompted to choose between changing the status to "Open," "In Progress," or "Completed." You can use a shortcut to make this selection, and the status will be updated accordingly.
+
+### Delete a Task
+
+![Delete A Task](images/delete-task.jpeg)
+
+When selecting the "Delete A Task" option, the program will verify if there are any tasks available. If tasks exist, they will be shown to you, and you will be asked to enter the number of the task you want to delete. Once you provide a valid number, the program will delete the corresponding task, and you will receive a confirmation message indicating the successful deletion.
