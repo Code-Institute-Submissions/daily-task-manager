@@ -160,10 +160,12 @@ class TaskManager:
 
         self.display_all_tasks()
 
-        update_index = (
-            int(input("Enter the task number whose task status you want to change: "))
-            - 1
-        )
+        try:
+            update_index = int(input("Enter the task number whose task status you want to change: ")) - 1
+        except:
+            print("Sorry, you didn't enter a number.")
+
+            return
 
         if update_index < 0 or update_index >= len(self.tasks):
             print("Invalid task number. Task status update failed.")
