@@ -99,7 +99,10 @@ class TaskManager:
         task_date = input("\nWhen must the task be finished (DD-MM-YYYY): ")
 
         try:
-            # Converts task_date (str) in to a datetime object and checks for correct format (DD-MM-YYYY).
+            """
+            Converts task_date (str) in to a datetime object 
+            and checks for correct format (DD-MM-YYYY).
+            """
             task_date = datetime.strptime(task_date, "%d-%m-%Y").date()
         except ValueError:
             print("Invalid date format. Task creation failed.")
@@ -137,7 +140,8 @@ class TaskManager:
         self.display_all_tasks()
 
         try:
-            deletion_index = int(input("\nEnter the task number to delete: ")) - 1
+            deletion_index = 
+            int(input("\nEnter the task number to delete: ")) - 1
         except ValueError:
             print("Sorry, you didn't enter a number.")
 
@@ -161,7 +165,8 @@ class TaskManager:
         self.display_all_tasks()
 
         try:
-            update_index = int(input("Enter the task number whose task status you want to change: ")) - 1
+            update_index = 
+            int(input("Enter the task number whose task status you want to change: ")) - 1
         except ValueError:
             print("Sorry, you didn't enter a number.")
 
@@ -173,9 +178,7 @@ class TaskManager:
             return
 
         task = self.tasks[update_index]
-        print(
-            "\nWould you like to change the status to Open, in Progress or Completed?"
-        )
+        print("\nWould you like to change the status to Open, in Progress or Completed?")
         new_status = input("\nPlease choose (O / P / C): ")
 
         if new_status == "O":
