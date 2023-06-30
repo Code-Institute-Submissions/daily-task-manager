@@ -24,7 +24,7 @@ class Task:
         task_date (str): The due date of the task.
         task_status (str): The status of the task.
     """
-    
+
     def __init__(self, task_title, task_description, task_date, task_status):
         self.task_title = task_title
         self.task_description = task_description
@@ -41,12 +41,14 @@ class Task:
                     Due Date: <task_date>
                     Status: <task_status>
         """
-        print(f"""
+        print(
+            f"""
         {index}. Title: {self.task_title}
            Description: {self.task_description}
            Due Date: {self.task_date}
            Status: {self.task_status}
-        """)
+        """
+        )
 
 
 class TaskManager:
@@ -56,10 +58,9 @@ class TaskManager:
     Attributes:
         tasks (list): A list to store the tasks.
     """
-    
+
     # Private variable to store the only instance of TaskManager.
     __instance = None
-    
 
     @staticmethod
     # Private method, means that the method belongs to the class.
@@ -75,7 +76,7 @@ class TaskManager:
         """
         Initializes an instance of TaskManager.
         """
-        
+
         if TaskManager.__instance is not None:
             # Raises an exception if an instance of TaskManager already exist.
             raise Exception("This class is a singleton!")
@@ -109,7 +110,7 @@ class TaskManager:
         """
         Displays all tasks stored in the TaskManager.
         """
- 
+
         if not self.tasks:
             print("\nNo tasks found.\n")
             return False
@@ -144,15 +145,20 @@ class TaskManager:
         """
         self.display_all_tasks()
 
-        update_index = int(input("Enter the task number whose task status you want to change: ")) - 1
+        update_index = (
+            int(input("Enter the task number whose task status you want to change: "))
+            - 1
+        )
 
         if update_index < 0 or update_index >= len(self.tasks):
             print("Invalid task number. Task status update failed.")
 
             return False
-        
+
         task = self.tasks[update_index]
-        new_status = input("\nDo you want to update the task status to Open, In Progress or Completed (O / P / C): ")
+        new_status = input(
+            "\nDo you want to update the task status to Open, In Progress or Completed (O / P / C): "
+        )
 
         if new_status == "O":
             task.task_status = "Open"
@@ -166,12 +172,12 @@ class TaskManager:
         print("\nTask status updated successfully.")
 
         self.display_all_tasks()
-        
+
     def main(self):
         """
         The main function of the TaskManager class.
         """
-        
+
         print(WELCOME_MSG)
         while True:
             print(APP_MENU)
@@ -195,5 +201,3 @@ class TaskManager:
 if __name__ == "__main__":
     task_manager = TaskManager.get_instance()
     task_manager.main()
-
-
