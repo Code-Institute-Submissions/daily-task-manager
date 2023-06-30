@@ -147,7 +147,7 @@ class TaskManager:
         self.display_all_tasks()
 
         try:
-            deletion_index = int(input("\nEnter the task number to delete: ")) - 1
+            deletion_index = int(input("\nEnter task number to delete: ")) - 1
         except ValueError:
             print("Sorry, you didn't enter a number.")
 
@@ -176,7 +176,7 @@ class TaskManager:
             update_index = (
                 int(
                     input(
-                        "Enter the task number whose task status you want to change: "
+                        "Enter task number whose status you want to change: "
                     )
                 )
                 - 1
@@ -187,13 +187,13 @@ class TaskManager:
             return
 
         if update_index < 0 or update_index >= len(self.tasks):
-            print("\nI'm sorry, invalid task number. Task status update failed.")
+            print("\nSorry, invalid task number. Task status update failed.")
 
             return
 
         task = self.tasks[update_index]
         print(
-            "\nWould you like to change the status to Open, in Progress or Completed?"
+            "\nWant to change the status to Open, in Progress or Completed?"
         )
         new_status = input("\nPlease choose (O / P / C): ")
 
