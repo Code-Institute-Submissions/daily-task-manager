@@ -173,7 +173,8 @@ class TaskManager:
         self.display_all_tasks()
 
         try:
-            update_index = int(input("Enter task number to change status: ")) - 1
+            update_input = input("Enter task number to change status: ")
+            update_index = int(update_input) - 1
         except ValueError:
             print("Sorry, you didn't enter a number.")
 
