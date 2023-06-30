@@ -1,6 +1,10 @@
 from datetime import datetime
 
-WELCOME_MSG = "Welcome to DAILY - your task manager."
+WELCOME_MSG = """Welcome to DAILY - The Task Manager
+
+DAILY will help you to stay organized and maximize your productivity.
+
+Let's begin!"""
 
 APP_MENU = """
 What would you like to do?
