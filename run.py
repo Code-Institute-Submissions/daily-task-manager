@@ -95,6 +95,12 @@ class TaskManager:
         """
 
         task_title = input("\nEnter a task title: ")
+
+        if task_title == "":
+            print("I'm sorry! You need to give your task a title.")
+
+            return
+        
         task_description = input("\nDescribe the new task: ")
         task_date = input("\nWhen must the task be finished (DD-MM-YYYY): ")
 
@@ -140,8 +146,7 @@ class TaskManager:
         self.display_all_tasks()
 
         try:
-            deletion_index = 
-            int(input("\nEnter the task number to delete: ")) - 1
+            deletion_index = int(input("\nEnter the task number to delete: ")) - 1
         except ValueError:
             print("Sorry, you didn't enter a number.")
 
@@ -165,8 +170,7 @@ class TaskManager:
         self.display_all_tasks()
 
         try:
-            update_index = 
-            int(input("Enter the task number whose task status you want to change: ")) - 1
+            update_index = int(input("Enter the task number whose task status you want to change: ")) - 1
         except ValueError:
             print("Sorry, you didn't enter a number.")
 
