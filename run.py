@@ -200,7 +200,7 @@ class TaskManager:
         while True:
             print(APP_MENU)
 
-            choice = input("Enter your choice (1-4): ")
+            choice = input("Enter your choice (1-5): ")
 
             if choice == "1":
                 self.create_task()
