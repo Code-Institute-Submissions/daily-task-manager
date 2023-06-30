@@ -30,4 +30,10 @@ For my third portfolio project at [Code Institue's](https://codeinstitute.net/) 
 
 ![Menu](images/menu.jpeg)
 
-After starting the program, users are greeted with the main menu, where they receive a warm welcome and a brief introduction to the app's features. The menu presents several options, and users must make a selection by entering the corresponding number and pressing Enter.
+After starting the program, you are greeted with the main menu, where you receive a warm welcome and a brief introduction to the app's features. The menu presents several options, and you must make a selection by entering the corresponding number and pressing Enter.
+
+### Create A New Task
+
+![Create Task](images/create-task.jpeg)
+
+When choosing the "Create a new task" option, you will be asked to enter a title for the task. Press Enter to confirm your input. Next, you will be prompted to provide a brief description of the task. Finally, you will be asked to enter the due date for the task. Please ensure that you enter the date in the correct format, and then press Enter to create and save the task.
