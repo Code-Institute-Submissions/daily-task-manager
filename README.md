@@ -10,9 +10,3 @@ DAILY is a valuable tool for people looking to stay organized and maximize their
 - As a user, I want to be able to exit the program when I have finished working.
 - As a user, I want to be able to specify the date I want my task to be finished.
 - As a user, I want to receive an error message when entering invalid data.
-
-## Flowchart
-
-To structure the program and provide an overview of its functionalities, I have created a flowchart using [GitMind](https://gitmind.com/) that outlines the functions and illustrates the necessary error handling for user inputs.
-
-![Flowchart](images/flow-chart.png)
