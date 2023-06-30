@@ -161,9 +161,8 @@ class TaskManager:
             return False
 
         task = self.tasks[update_index]
-        new_status = input(
-            "\nDo you want to update the task status to Open, In Progress or Completed (O / P / C): "
-        )
+        print("\nWould you like to change the status to Open, in Progress or Completed?")
+        new_status = input("\nPlease choose (O / P / C): ")
 
         if new_status == "O":
             task.task_status = "Open"
