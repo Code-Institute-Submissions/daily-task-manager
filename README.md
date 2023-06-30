@@ -60,8 +60,25 @@ When selecting the "Delete A Task" option, the program will verify if there are 
 
 ### Manual Testing
 
+I confirm that I tested all features and all of the worked wihout any problems. In order to ensure that the program does not crash due to incorrect user input during interaction, error handling has been implemented. This error handling was manually tested afterwards, and the results were documented in a table.
+
+|                  Point of time                    |    Input   |                          Output                      |
+-------------------------------------------------------------------------------------------------------------------------
+|            "Enter your choice (1-5): "            |      6     |            "Invalid choice! Please try again."       |
+|            "Enter your choice (1-5): "            |      N     |            "Invalid choice! Please try again."       |
+|            "Enter your choice (1-5): "            |      2     |           "Sorry, you don't have any tasks yet."     |
+|            "Enter your choice (1-5): "            |      3     | "Sorry, no tasks found. There is nothing to update." |
+|            "Enter your choice (1-5): "            |      4     |         "Sorry, you don't have any tasks yet."       |
+|              "Enter a task title: "               |    Enter   |   "I'm sorry! You need to give your task a title."   |
+| "When has the task to be finished (DD-MM-YYYY): " | 2023-09-23 |      "Invalid date format. Task creation failed."    |
+|       "Enter task number to change status: "      |      X     |           "Sorry, you didn't enter a number."        |
+|       "Enter task number to delete: "             |      p     |  "Sorry, invalid task number. Task deletion failed.  |
+|        "Please choose (O / P / C): "              |      9     |   "Invalid task status. Task status update failed."  |
+
+
+
 ### Validator Testing
 
-I passed the run.py file through a PEP8 Linter and can confirm no problems occured.
+I passed the run.py file through a PEP8 Linter and confirm no errors were found.
 
 ![PEP8 Linter](images/python-linter.jpeg)
