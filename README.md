@@ -43,3 +43,9 @@ When choosing the "Create a new task" option, you will be asked to enter a title
 ![Display Tasks](images/display-tasks.jpeg)
 
 If you choose the "Display Your Tasks" option, the program will check if you have any existing tasks. If tasks are found, they will be listed for you.
+
+### Update A Task Status
+
+![Update Task Status](images/update-task.jpeg)
+
+If you select the "Update A Task Status" option, you will be presented with your existing tasks. You can then choose which task's status you want to modify. Once you have made your selection, you will be prompted to choose between changing the status to "Open," "In Progress," or "Completed." You can use a shortcut to make this selection, and the status will be updated accordingly.
