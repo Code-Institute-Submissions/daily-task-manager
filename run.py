@@ -178,7 +178,7 @@ class TaskManager:
             return
 
         if update_index < 0 or update_index >= len(self.tasks):
-            print("Invalid task number. Task status update failed.")
+            print("\nI'm sorry, invalid task number. Task status update failed.")
 
             return
 
