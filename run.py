@@ -104,7 +104,7 @@ class TaskManager:
         except ValueError:
             print("Invalid date format. Task creation failed.")
 
-            return False
+            return
 
         task = Task(task_title, task_description, task_date, "Open")
         self.tasks.append(task)
@@ -117,7 +117,7 @@ class TaskManager:
 
         if not self.tasks:
             print("\nNo tasks found.\n")
-            return False
+            return
 
         print("\nTasks:")
         # Gets element and index in list.
@@ -132,7 +132,7 @@ class TaskManager:
         if not self.tasks:
             print("No tasks found.")
 
-            return False
+            return
 
         self.display_all_tasks()
 
@@ -156,7 +156,7 @@ class TaskManager:
         if not self.tasks:
             print("\nSorry, no tasks found. There is nothing to update.")
 
-            return False
+            return
 
         self.display_all_tasks()
 
@@ -170,7 +170,7 @@ class TaskManager:
         if update_index < 0 or update_index >= len(self.tasks):
             print("Invalid task number. Task status update failed.")
 
-            return False
+            return
 
         task = self.tasks[update_index]
         print(
