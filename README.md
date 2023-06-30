@@ -6,6 +6,10 @@
 
 DAILY is a valuable tool for people looking to stay organized and maximize their productivity. With its user-friendly interface and intuitive features, it empowers users to take control of their tasks and optimize their workflow.
 
+## Project Scope
+
+For my third portfolio project at ![Code Institue's](https://codeinstitute.net/) Fullstack Software Development Program, I was tasked with developing a terminal application in Python. Given the opportunity to create a program with real-world utility, I decided to develop a Task Manager.
+
 ## User Stories
 
 - As a user, I want to be able to create new tasks.
