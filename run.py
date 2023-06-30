@@ -193,7 +193,7 @@ class TaskManager:
 
     def main(self):
         """
-        The main function of the TaskManager class.
+        The main function of the TaskManager class that runs the program.
         """
 
         print(WELCOME_MSG)
