@@ -151,7 +151,7 @@ class TaskManager:
             print("\nSorry, no tasks found. There is nothing to update.")
 
             return False
-            
+
         self.display_all_tasks()
 
         update_index = (
@@ -165,7 +165,9 @@ class TaskManager:
             return False
 
         task = self.tasks[update_index]
-        print("\nWould you like to change the status to Open, in Progress or Completed?")
+        print(
+            "\nWould you like to change the status to Open, in Progress or Completed?"
+        )
         new_status = input("\nPlease choose (O / P / C): ")
 
         if new_status == "O":
