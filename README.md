@@ -63,7 +63,7 @@ When selecting the "Delete A Task" option, the program will verify if there are 
 I confirm that I tested all features and all of the worked wihout any problems. In order to ensure that the program does not crash due to incorrect user input during interaction, error handling has been implemented. This error handling was manually tested afterwards, and the results were documented in a table.
 
 |                  Point of time                    |    Input   |                          Output                      |
-|-----------------------------------------------------------------------------------------------------------------------|
+|---------------------------------------------------|------------|------------------------------------------------------|
 |            "Enter your choice (1-5): "            |      6     |            "Invalid choice! Please try again."       |
 |            "Enter your choice (1-5): "            |      N     |            "Invalid choice! Please try again."       |
 |            "Enter your choice (1-5): "            |      2     |           "Sorry, you don't have any tasks yet."     |
