@@ -173,14 +173,7 @@ class TaskManager:
         self.display_all_tasks()
 
         try:
-            update_index = (
-                int(
-                    input(
-                        "Enter task number whose status you want to change: "
-                    )
-                )
-                - 1
-            )
+            update_index = int(input("Enter task number to change status: ")) - 1
         except ValueError:
             print("Sorry, you didn't enter a number.")
 
@@ -192,9 +185,7 @@ class TaskManager:
             return
 
         task = self.tasks[update_index]
-        print(
-            "\nWant to change the status to Open, in Progress or Completed?"
-        )
+        print("\nWant to change the status to Open, in Progress or Completed?")
         new_status = input("\nPlease choose (O / P / C): ")
 
         if new_status == "O":
