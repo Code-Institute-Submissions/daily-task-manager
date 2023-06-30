@@ -37,3 +37,9 @@ After starting the program, you are greeted with the main menu, where you receiv
 ![Create Task](images/create-task.jpeg)
 
 When choosing the "Create a new task" option, you will be asked to enter a title for the task. Press Enter to confirm your input. Next, you will be prompted to provide a brief description of the task. Finally, you will be asked to enter the due date for the task. Please ensure that you enter the date in the correct format, and then press Enter to create and save the task.
+
+### Display Your Tasks
+
+![Display Tasks](images/display-tasks.jpeg)
+
+If you choose the "Display Your Tasks" option, the program will check if you have any existing tasks. If tasks are found, they will be listed for you.
