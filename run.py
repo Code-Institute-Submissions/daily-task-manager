@@ -152,7 +152,7 @@ class TaskManager:
             return False
         
         task = self.tasks[update_index]
-        new_status = input("Do you want to update the task status to Open, In Progress or Completed (O / P / C): ")
+        new_status = input("\nDo you want to update the task status to Open, In Progress or Completed (O / P / C): ")
 
         if new_status == "O":
             task.task_status = "Open"
@@ -189,7 +189,7 @@ class TaskManager:
             elif choice == "5":
                 break
             else:
-                print("Invalid choice! Please try again.")
+                print("\nInvalid choice! Please try again.")
 
 
 if __name__ == "__main__":
