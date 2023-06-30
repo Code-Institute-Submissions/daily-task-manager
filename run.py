@@ -140,7 +140,7 @@ class TaskManager:
         """
 
         if not self.tasks:
-            print("Sorry, you don't have any tasks yet.")
+            print("\nSorry, you don't have any tasks yet.")
 
             return
 
