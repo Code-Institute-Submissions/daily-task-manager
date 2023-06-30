@@ -163,7 +163,7 @@ class TaskManager:
         else:
             print("Invalid task status. Task status update failed.")
 
-        print("Task status updated successfully.")
+        print("\nTask status updated successfully.")
 
         self.display_all_tasks()
         
