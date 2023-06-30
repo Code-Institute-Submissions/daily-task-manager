@@ -8,7 +8,7 @@ DAILY is a valuable tool for people looking to stay organized and maximize their
 
 ## Project Scope
 
-For my third portfolio project at ![Code Institue's](https://codeinstitute.net/) Fullstack Software Development Program, I was tasked with developing a terminal application in Python. Given the opportunity to create a program with real-world utility, I decided to develop a Task Manager.
+For my third portfolio project at [Code Institue's](https://codeinstitute.net/) Fullstack Software Development Program, I was tasked with developing a terminal application in Python. Given the opportunity to create a program with real-world utility, I decided to develop a Task Manager.
 
 ## User Stories
 
@@ -23,3 +23,11 @@ For my third portfolio project at ![Code Institue's](https://codeinstitute.net/)
 ## Flowchart
 
 ![Flowchart](images/flow-chart.png)
+
+## Features
+
+### Menu
+
+![Menu](images/menu.jpeg)
+
+After starting the program, users are greeted with the main menu, where they receive a warm welcome and a brief introduction to the app's features. The menu presents several options, and users must make a selection by entering the corresponding number and pressing Enter.
