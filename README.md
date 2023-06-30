@@ -12,6 +12,8 @@ For my third portfolio project at [Code Institue's](https://codeinstitute.net/) 
 
 ## User Stories
 
+Defining user stories before building an app helps prioritize user needs, communicate effectively, plan development and validate functionality. It ensures a user-centric and successful app development process.
+
 - As a user, I want to be able to create new tasks.
 - As a user, I want to be able to view a list of all my tasks to get an overview of my tasks.
 - As a user, I want to be able to update the status between Open, in Progress and Completed.
