@@ -125,7 +125,8 @@ class TaskManager:
         """
 
         if not self.tasks:
-            print("\nNo tasks found.\n")
+            print("Sorry, you don't have any tasks yet.")
+            
             return
 
         print("\nTasks:")
@@ -139,7 +140,7 @@ class TaskManager:
         """
 
         if not self.tasks:
-            print("No tasks found.")
+            print("Sorry, you don't have any tasks yet.")
 
             return
 
