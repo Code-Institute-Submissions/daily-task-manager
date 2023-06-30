@@ -143,6 +143,11 @@ class TaskManager:
         """
         Allows the user to update the task status of a task.
         """
+        if not self.tasks:
+            print("\nSorry, no tasks found. There is nothing to update.")
+
+            return False
+            
         self.display_all_tasks()
 
         update_index = (
