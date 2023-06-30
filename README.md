@@ -2,7 +2,7 @@
 
 [Click here](https://daily-task-manager-a1eb82a65d82.herokuapp.com/) to use the app.
 
-# DAILY - your task manager.
+# DAILY - The Task Manager.
 
 DAILY is a valuable tool for people looking to stay organized and maximize their productivity. With its user-friendly interface and intuitive features, it empowers users to take control of their tasks and optimize their workflow.
 
@@ -15,3 +15,7 @@ DAILY is a valuable tool for people looking to stay organized and maximize their
 - As a user, I want to be able to exit the program when I have finished working.
 - As a user, I want to be able to specify the date I want my task to be finished.
 - As a user, I want to receive an error message when entering invalid data.
+
+## Flowchart
+
+![Flowchart](images/flow-chart.png)
