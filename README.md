@@ -1,3 +1,7 @@
+![Product Picture](images/am-i-responive.jpg)
+
+[Click here](https://daily-task-manager-a1eb82a65d82.herokuapp.com/) to use the app.
+
 # DAILY - your task manager.
 
 DAILY is a valuable tool for people looking to stay organized and maximize their productivity. With its user-friendly interface and intuitive features, it empowers users to take control of their tasks and optimize their workflow.
