@@ -135,7 +135,13 @@ class TaskManager:
             return False
 
         self.display_all_tasks()
-        deletion_index = int(input("\nEnter the task number to delete: ")) - 1
+
+        try:
+            deletion_index = int(input("\nEnter the task number to delete: ")) - 1
+        except:
+            print("Sorry, you didn't enter a number.")
+
+            return
 
         if deletion_index < 0 or deletion_index >= len(self.tasks):
             print("Invalid task number. Task deletion failed.")
