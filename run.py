@@ -100,13 +100,13 @@ class TaskManager:
             print("I'm sorry! You need to give your task a title.")
 
             return
-        
+
         task_description = input("\nDescribe the new task: ")
         task_date = input("\nWhen must the task be finished (DD-MM-YYYY): ")
 
         try:
             """
-            Converts task_date (str) in to a datetime object 
+            Converts task_date (str) in to a datetime object
             and checks for correct format (DD-MM-YYYY).
             """
             task_date = datetime.strptime(task_date, "%d-%m-%Y").date()
@@ -126,7 +126,7 @@ class TaskManager:
 
         if not self.tasks:
             print("\nSorry, you don't have any tasks yet.")
-            
+
             return
 
         print("\nTasks:")
@@ -173,7 +173,14 @@ class TaskManager:
         self.display_all_tasks()
 
         try:
-            update_index = int(input("Enter the task number whose task status you want to change: ")) - 1
+            update_index = (
+                int(
+                    input(
+                        "Enter the task number whose task status you want to change: "
+                    )
+                )
+                - 1
+            )
         except ValueError:
             print("Sorry, you didn't enter a number.")
 
@@ -185,7 +192,9 @@ class TaskManager:
             return
 
         task = self.tasks[update_index]
-        print("\nWould you like to change the status to Open, in Progress or Completed?")
+        print(
+            "\nWould you like to change the status to Open, in Progress or Completed?"
+        )
         new_status = input("\nPlease choose (O / P / C): ")
 
         if new_status == "O":
