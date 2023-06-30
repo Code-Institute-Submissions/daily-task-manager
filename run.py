@@ -156,6 +156,8 @@ class TaskManager:
         if deletion_index < 0 or deletion_index >= len(self.tasks):
             print("Invalid task number. Task deletion failed.")
 
+            return
+
         del self.tasks[deletion_index]
         print("\nTask deleted successfully.")
 
