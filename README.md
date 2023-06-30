@@ -1,6 +1,6 @@
 ![Product Picture](images/am-i-responsive.jpg)
 
-[Click here](https://daily-task-manager-a1eb82a65d82.herokuapp.com/) to use the app.
+[Click here](https://daily-task-manager-a1eb82a65d82.herokuapp.com/){target="_blank"} to use the app.
 
 # DAILY - your task manager.
 
