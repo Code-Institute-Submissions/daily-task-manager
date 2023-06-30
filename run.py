@@ -99,7 +99,7 @@ class TaskManager:
         task_date = input("\nWhen must the task be finished (DD-MM-YYYY): ")
 
         try:
-            # Converts task_date (str) in to a datetime object, extracts the date and checks for valid format (DD-MM-YYYY).
+            # Converts task_date (str) in to a datetime object and checks for correct format (DD-MM-YYYY).
             task_date = datetime.strptime(task_date, "%d-%m-%Y").date()
         except ValueError:
             print("Invalid date format. Task creation failed.")
