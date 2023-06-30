@@ -22,6 +22,8 @@ For my third portfolio project at [Code Institue's](https://codeinstitute.net/) 
 
 ## Flowchart
 
+Creating a flowchart before programming helped me visualize the app's logic, plan efficiently and optimize user experience. 
+
 ![Flowchart](images/flow-chart.png)
 
 ## Features
