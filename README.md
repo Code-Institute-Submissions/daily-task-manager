@@ -82,3 +82,12 @@ I confirm that I tested all features and all of the worked wihout any problems. 
 I passed the run.py file through a PEP8 Linter and confirm no errors were found.
 
 ![PEP8 Linter](images/python-linter.jpeg)
+
+## Tools & Technologies
+
+- The application was written in [Python Programming Language](https://www.python.org/)
+- In order to run the application on the web, Code Institute's [Command Line Application Template](https://github.com/codewithmaik/command-line-template) was used.
+- The application was deployed using [Heroku](https://www.heroku.com/platform)
+- [Git](https://git-scm.com/) and [Github](https://github.com/) were used for version control.
+- [Am I responsive](https://ui.dev/amiresponsive) was used for the application picture.
+- [Lucidchart](https://www.lucidchart.com) was used to build the flowchart.
