@@ -30,6 +30,8 @@ Creating a flowchart before programming helped me visualize the app's logic, pla
 
 ## Features
 
+In the following section, I will introduce the features of the application and explain how to use it.
+
 ### Menu
 
 ![Menu](images/menu.jpeg)
