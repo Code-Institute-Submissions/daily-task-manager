@@ -97,3 +97,13 @@ I passed the run.py file through a PEP8 Linter and confirm no errors were found.
 - [Git](https://git-scm.com/) and [Github](https://github.com/) were used for version control.
 - [Am I responsive](https://ui.dev/amiresponsive) was used for the application picture.
 - [Lucidchart](https://www.lucidchart.com) was used to build the flowchart.
+
+## Deployment
+
+Steps to deploy the application using Heroku:
+
+- Log in to your Heroku account
+- Create a new Heroku application
+- Set buildpacks to Python and NodeJS
+- Link the Heroku App to the repository
+- Click on Deploy
