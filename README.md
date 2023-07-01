@@ -89,6 +89,18 @@ I passed the run.py file through a PEP8 Linter and confirm no errors were found.
 
 ![PEP8 Linter](images/python-linter.jpeg)
 
+## Development
+
+Throughout the development process, I encountered various challenges that helped me improve my problem-solving abilities. In the following section, I would like to highlight the challenges that have stood out in my memory and the new concepts I learned and integrated.
+
+### Challenges
+
+I remember having issues with the display_all_tasks() function. So, I simplified the concept and first wrote the display_task() function. Then, I created a loop for the display_all_tasks() function, where the display_task() function is called in each iteration.
+
+### Concepts
+
+While working on the display_all_tasks()-function I found out that the Python built-in enumerate function is great for iterating and keeping track of the index at the same time. So I used it to iterate over the list of tasks to print them out, but also keeping track of the index to list them with their corresponding number.
+
 ## Tools & Technologies
 
 - The application was written in [Python Programming Language](https://www.python.org/)
